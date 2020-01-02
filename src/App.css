@@ -1,38 +1,266 @@
-.App {
-  text-align: center;
+ @font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url("./fonts/HelveticaNeue_Medium.ttf")
+ }
+ @font-face {
+  font-family: "HelveticaNeueLight";
+  src: url("./fonts/HelveticaNeue_Light.ttf")
+ }
+ @font-face {
+  font-family: "HelveticaNeueBold";
+  src: url("./fonts/HelveticaNeue_Bold.ttf")
+ }
+
+
+ 
+
+.firstnavbar {
+  background-color: #e9e9e9 ;
+  font-family: "HelveticaNeueMedium";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #e9e9e9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  color: #262626;
+  font-family: "HelveticaNeueLight";
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  color: #262626;
+  font-family: "HelveticaNeueLight";
+  
+}
+
+.containerFirstScroll{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.definitionBIM, h5, h3{
+  color: rgb(28, 57, 25) ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.containerSecondScroll{
+  position: relative;
+  
+
+}
+.description{
+  position: absolute;
+  font-family: "HelveticaNeueLight";
+  padding: 2em;
+  margin-bottom: 4em;
+  border: 1px solid #d0d0d093;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #e9e9e9;
+  color: #262626;
+}
+
+/* .description2{
+  position: absolute;
+  font-family: "HelveticaNeueLight";
+  bottom: 0;
+  padding: 2em;
+  margin-bottom: 4em;
+  border: 1px solid #d0d0d093;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #e9e9e9;
+  color: #262626;
+} */
+
+
+
+
+.definitionBIM{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boldtitle{
+  font-family: "HelveticaNeueBold";
+  font-size: 13.8vw;
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.card{
+  width: 18rem;
+  background-color: #e9e9e9;
+  
+}
+
+.buttonCards {
+  background-color: #c4c4c4;
+  color: #1c3919;
+}
+
+.btnHaut {
+  color: #747474;
+}
+
+.btnHaut:hover {
+  color: #1c3919;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #989898;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.buttonCards:hover {
+  background-color: #e9e9e9;
+  color: #262626;
+  border: 1px solid;
+}
+
+
+.footer{
+  background: #152913;
+  color:#ffffff;
+}
+
+.copyright p {
+  border-top:1px solid rgba(255,255,255,.1);
+} 
+
+
+.imgCard{
+  height: 180px;
+  width: auto;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand { 
+  color: rgb(28, 57, 25) ;
+  font-family: "HelveticaNeueMedium";
+  font-size: 1.7em;
+}
+
+/* --ARTICLE-- */
+
+.Article1Box{
+  
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
+}
+
+
+.Article2Box {
+  background: url('./img/articleScroll2-light.jpg') no-repeat center center fixed;
+  padding-top: 3.15em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.Article3Box {
+  background: url('./img/ArticleGestion1HD.jpg') no-repeat center center fixed;
+  padding-top: 3.15em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.Article4Box{
+  
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
+}
+
+ul {list-style: none}
+
+li::before {content: "•  "; color: #1c3919}
+
+.sizeCardArticle{
+  width: 150vh;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.sizeCardArticle1{
+  width: 100%;  
+}
+
+.sizeCardArticle3{
+  width: 120vh;
+}
+
+
+
+/* --CONTACT-- */
+
+.ContactBox{
+  height: 90vh;
+  
+}
+
+.sizeCard{
+  width: 50vh;
+
+}
+
+
+
+.ContactBox {
+  background: url('./img/Contact-light.jpg') no-repeat center center fixed;
+  padding-top: 3.15em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.BtnEnvoyer{
+  display: block;
+  margin: auto;
+  font-family: "HelveticaNeueLight";
+  border: 1px solid #1c39196d;
+  border-radius: 4px;
+}
+
+.BtnEnvoyer:hover{
+  display: block;
+  margin: auto;
+  font-family: "HelveticaNeueLight";
+  border: 1px solid #1c3919;
+  border-radius: 4px;
+}
+
+h1{
+  color: rgb(28, 57, 25) ;
+  font-family: "HelveticaNeueMedium";
 }
